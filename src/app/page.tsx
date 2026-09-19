@@ -1,7 +1,7 @@
 import { platformData } from '../data';
 import ShaderShowcase from '@/components/ui/hero';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, FlaskConical, Briefcase, ShieldCheck, Users, Rocket } from 'lucide-react';
+import { Target, FlaskConical, Briefcase, Landmark, Lightbulb, Rocket } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -112,57 +112,63 @@ export default function Home() {
             {/* Offerings Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Card 1 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-orange-500/20 group-hover:scale-110 transition-transform">
-                  <Target className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <Target className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">Milestone-Led Building</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Structured acceleration aligned with technology and commercial milestones to ensure continuous growth.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Milestone-Led Building</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Structured acceleration aligned with technology and commercial milestones to ensure continuous growth.</p>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-cyan-500/20 group-hover:scale-110 transition-transform">
-                  <FlaskConical className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <FlaskConical className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">Technical Validation</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Expert reviews, testing, and validation pathways through dedicated institutional infrastructure.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Technical Validation</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Expert reviews, testing, and validation pathways through dedicated institutional infrastructure.</p>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-blue-500/20 group-hover:scale-110 transition-transform">
-                  <Briefcase className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <Briefcase className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">Industry Pathways</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Customer discovery, pilot design, and support navigating complex corporate procurement cycles.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Industry Pathways</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Customer discovery, pilot design, and support navigating complex corporate procurement cycles.</p>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
-                  <ShieldCheck className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <Landmark className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">IP & Certification</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Guidance on regulatory pathways, defensible technology strategy, and certification processes.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Governance</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Establish robust governance frameworks, compliance structures, and operational best practices for scaling.</p>
               </div>
 
               {/* Card 5 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-purple-500/20 group-hover:scale-110 transition-transform">
-                  <Users className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <Lightbulb className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">Founder Leadership</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Mentorship on team building, governance, and scaling organizational capabilities effectively.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Mentorship</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Direct access to industry veterans, technical experts, and seasoned founders for strategic guidance.</p>
               </div>
 
               {/* Card 6 */}
-              <div className="bg-white rounded-2xl p-8 border border-slate-200 hover:shadow-lg hover:border-slate-300 transition-all group">
-                <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-md shadow-rose-500/20 group-hover:scale-110 transition-transform">
-                  <Rocket className="w-6 h-6" />
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-cyan-500/30 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="mb-6 text-slate-700 group-hover:text-cyan-600 transition-colors">
+                  <Rocket className="w-8 h-8 stroke-[1.5]" />
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">Investor Readiness</h4>
-                <p className="text-slate-500 leading-relaxed text-sm">Data-room preparedness, investment narrative, and curated follow-on capital access.</p>
+                <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-cyan-700 transition-colors">Investor Readiness</h4>
+                <p className="text-slate-600 leading-relaxed text-sm">Data-room preparedness, investment narrative, and curated follow-on capital access.</p>
               </div>
             </div>
           </div>
