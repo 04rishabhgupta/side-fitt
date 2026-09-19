@@ -11,7 +11,7 @@ export default function Home() {
       <main className="bg-white">
         
         {/* ABOUT SECTION */}
-        <section id="about" className="py-20 md:py-28 container mx-auto px-6 max-w-6xl">
+        <section id="about" className="py-12 md:py-24 container mx-auto px-6 max-w-6xl">
           <div className="flex flex-col space-y-4">
             <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
               About SIDBI DeepTech
@@ -26,8 +26,8 @@ export default function Home() {
         </section>
 
         {/* EMBEDDED VIDEO/IMAGE PLACEHOLDER */}
-        <section className="container mx-auto px-6 max-w-6xl mb-20 md:mb-32">
-          <div className="w-full aspect-[21/9] bg-slate-100 rounded-sm overflow-hidden relative shadow-lg">
+        <section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
+          <div className="w-full aspect-video md:aspect-[21/9] bg-slate-100 rounded-sm overflow-hidden relative shadow-lg">
              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Initiative" className="w-full h-full object-cover" />
              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group cursor-pointer">
                <div className="w-20 h-20 bg-red-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-xl">
@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         {/* HOW IT WORKS (Alternating Z-Layout) */}
-        <section id="how-it-works" className="py-20 md:py-28 bg-white border-t border-slate-100">
+        <section id="how-it-works" className="py-12 md:py-24 bg-white border-t border-slate-100">
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="mb-20">
               <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
@@ -92,8 +92,8 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
               {platformData.glance.map((stat, i) => (
                 <div key={i} className="flex flex-col items-center">
-                  <div className="text-5xl md:text-6xl font-black text-white mb-4 tracking-tighter">{stat.value}</div>
-                  <div className="text-sm text-cyan-400 font-semibold uppercase tracking-widest text-center">{stat.metric}</div>
+                  <div className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter">{stat.value}</div>
+                  <div className="text-xs md:text-sm text-cyan-400 font-semibold uppercase tracking-widest text-center">{stat.metric}</div>
                 </div>
               ))}
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
         </section>
 
         {/* FOCUS AREAS (Startups/Domains) */}
-        <section id="focus" className="py-20 md:py-28 bg-white border-b border-slate-100">
+        <section id="focus" className="py-12 md:py-24 bg-white border-b border-slate-100">
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="mb-16">
               <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
@@ -131,7 +131,7 @@ export default function Home() {
         </section>
 
         {/* ACCELERATION TIMELINE (Horizontal) */}
-        <section id="acceleration" className="py-20 md:py-28 bg-white border-b border-slate-100">
+        <section id="acceleration" className="py-12 md:py-24 bg-white border-b border-slate-100">
           <div className="container mx-auto px-6 max-w-6xl">
             <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
               Program Timeline
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         {/* INSTITUTIONAL ARCHITECTURE */}
-        <section id="mentors" className="py-20 md:py-28 bg-white border-b border-slate-100">
+        <section id="mentors" className="py-12 md:py-24 bg-white border-b border-slate-100">
           <div className="container mx-auto px-6 max-w-6xl">
             <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
               Institutional Architecture
@@ -188,7 +188,7 @@ export default function Home() {
         </section>
 
         {/* CLOSING / APPLY */}
-        <section id="apply" className="py-20 md:py-28 bg-white">
+        <section id="apply" className="py-12 md:py-24 bg-white">
           <div className="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row gap-16 justify-between items-center">
             <div className="max-w-xl">
               <span className="text-sm font-bold tracking-widest text-emerald-500 uppercase">
@@ -220,8 +220,8 @@ export default function Home() {
           <div className="container mx-auto px-6 max-w-6xl">
             {/* Top Logos & Tagline */}
             <div className="mb-12">
-              <div className="flex items-center gap-6 mb-6">
-                <div className="bg-white p-2 rounded-full w-16 h-16 flex items-center justify-center">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6 mb-6">
+                <div className="bg-white p-2 rounded-full w-16 h-16 flex items-center justify-center shrink-0">
                   <img src="/logo.png" alt="FITT Logo" className="w-12 h-auto" />
                 </div>
                 <div className="w-px h-10 bg-white/20"></div>
@@ -307,7 +307,7 @@ export default function Home() {
             <div className="h-px w-full bg-white/10 mb-8"></div>
 
             {/* Bottom Section */}
-            <div className="flex flex-col md:flex-row justify-between items-center text-xs text-white/40 gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-white/40 gap-4">
               <div>{platformData.footer.copyright}</div>
               <div>{platformData.footer.partnership}</div>
             </div>

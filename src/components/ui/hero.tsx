@@ -8,6 +8,7 @@ import { platformData } from "@/data"
 export default function ShaderShowcase() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isActive, setIsActive] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [particles, setParticles] = useState<{left: string, top: string, xOffsets: number[]}[]>([])
 
   useEffect(() => {
@@ -171,6 +172,30 @@ export default function ShaderShowcase() {
             Mentors
           </a>
         </nav>
+
+        <button 
+          className="md:hidden text-white p-2 z-50 relative"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {isMobileMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center space-y-8 md:hidden">
+            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">About</a>
+            <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Process</a>
+            <a href="#focus" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Focus Areas</a>
+            <a href="#acceleration" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Acceleration</a>
+            <a href="#mentors" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Mentors</a>
+          </div>
+        )}
       </header>
 
       <main className="absolute bottom-8 left-8 z-20 max-w-2xl">
@@ -191,13 +216,13 @@ export default function ShaderShowcase() {
           </motion.div>
 
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-none tracking-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <motion.span
-              className="block font-light text-white/90 text-4xl md:text-5xl lg:text-6xl mb-2 tracking-wider"
+              className="block font-light text-white/90 text-3xl md:text-5xl lg:text-6xl mb-2 tracking-wider"
               style={{
                 background: "linear-gradient(135deg, #ffffff 0%, #06b6d4 30%, #f97316 70%, #ffffff 100%)",
                 WebkitBackgroundClip: "text",
@@ -230,14 +255,14 @@ export default function ShaderShowcase() {
           </motion.p>
 
           <motion.div
-            className="flex items-center gap-6 flex-wrap"
+            className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
             <motion.a
               href="#about"
-              className="px-10 py-4 rounded-full bg-transparent border-2 border-white/30 text-white font-medium text-sm transition-all duration-300 hover:bg-white/10 hover:border-cyan-400/50 hover:text-cyan-100 cursor-pointer backdrop-blur-sm inline-block"
+              className="w-full sm:w-auto text-center px-10 py-4 rounded-full bg-transparent border-2 border-white/30 text-white font-medium text-sm transition-all duration-300 hover:bg-white/10 hover:border-cyan-400/50 hover:text-cyan-100 cursor-pointer backdrop-blur-sm inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -245,7 +270,7 @@ export default function ShaderShowcase() {
             </motion.a>
             <motion.a
               href="https://accubate.fitt-iitd.in/ext/form/23719/1/apply"
-              className="px-10 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-orange-500 text-white font-semibold text-sm transition-all duration-300 hover:from-cyan-400 hover:to-orange-400 cursor-pointer shadow-lg hover:shadow-xl inline-block"
+              className="w-full sm:w-auto text-center px-10 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-orange-500 text-white font-semibold text-sm transition-all duration-300 hover:from-cyan-400 hover:to-orange-400 cursor-pointer shadow-lg hover:shadow-xl inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -255,7 +280,7 @@ export default function ShaderShowcase() {
         </div>
       </main>
 
-      <div className="absolute bottom-8 right-8 z-30">
+      <div className="hidden md:block absolute bottom-8 right-8 z-30">
         <div className="relative w-20 h-20 flex items-center justify-center">
           <PulsingBorder
             colors={["#06b6d4", "#0891b2", "#f97316", "#00FF88", "#FFD700", "#FF6B35", "#ffffff"]}
