@@ -172,33 +172,9 @@ export default function ShaderShowcase() {
             Mentors
           </a>
         </nav>
-
-        <button 
-          className="md:hidden text-white p-2 z-50 relative"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-
-        {/* Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
-          <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center space-y-8 md:hidden">
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">About</a>
-            <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Process</a>
-            <a href="#focus" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Focus Areas</a>
-            <a href="#acceleration" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Acceleration</a>
-            <a href="#mentors" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-2xl font-light">Mentors</a>
-          </div>
-        )}
       </header>
 
-      <main className="absolute bottom-8 left-8 z-20 max-w-2xl">
+      <main className="absolute bottom-8 inset-x-6 md:inset-x-auto md:left-8 z-20 max-w-2xl">
         <div className="text-left">
           <motion.div
             className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm mb-6 relative border border-white/10"

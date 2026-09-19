@@ -73,7 +73,7 @@ export default function Home() {
                   </div>
                   <div className="w-full md:w-1/2">
                     <div className="aspect-[4/3] rounded-sm overflow-hidden bg-slate-100 shadow-xl border border-slate-200/60">
-                      <img src={`https://images.unsplash.com/photo-${i === 0 ? '1553877522-43269d4ea984' : i === 1 ? '1522071820081-009f0129c71c' : i === 2 ? '1519389953810-c47bc8d91f28' : '1551434678-e076c223a692'}?q=80&w=1200&auto=format&fit=crop`} alt={step.title} className="w-full h-full object-cover" />
+                      <img src={`https://images.unsplash.com/photo-${i === 0 ? '1553877522-43269d4ea984' : i === 1 ? '1522071820081-009f0129c71c' : i === 2 ? '1460925895917-afdab827c52f' : '1551434678-e076c223a692'}?q=80&w=1200&auto=format&fit=crop`} alt={step.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
