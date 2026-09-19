@@ -103,13 +103,18 @@ export default function ShaderShowcase() {
 
       <header className="relative z-20 flex items-center justify-between p-6">
         <motion.div
-          className="flex items-center group cursor-pointer"
+          className="flex items-center gap-4 group cursor-pointer"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
           <motion.img
             src="/logo.png"
             alt="FITT Logo"
+            className="h-12 w-auto bg-white rounded-md p-1 group-hover:drop-shadow-lg transition-all duration-300"
+          />
+          <motion.img
+            src="/sidbi-logo.png"
+            alt="SIDBI Logo"
             className="h-12 w-auto bg-white rounded-md p-1 group-hover:drop-shadow-lg transition-all duration-300"
           />
 
