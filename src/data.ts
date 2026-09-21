@@ -1,111 +1,202 @@
 export const platformData = {
   hero: {
-    eyebrow: "SIDBI National DeepTech Platform",
-    headline: "From Breakthrough Technology to Scalable Enterprise",
-    subheadline: "A national platform bringing together early-stage capital, institutional expertise, industry access and structured acceleration for India's most promising deeptech ventures.",
-    supportingLine: "With an envisioned corpus of ₹100 crore and investment support of up to ₹2 crore per startup, the platform helps technology-led ventures move from validation to commercial readiness, market adoption and follow-on capital.",
-    cta: "Apply to the Platform",
-  },
+  eyebrow: "SIDBI National DeepTech Investment Platform",
+  headline: "Building India's Next Generation of DeepTech Ventures",
+  subheadline:
+    "A national platform to create a coordinated pipeline of high-potential technology startups for institutional evaluation, investment and acceleration.",
+  supportingLine:
+    "The platform brings together SIDBI, FITT IIT Delhi and participating incubators through a common national application, shared evaluation standards and a Central Investment Committee.",
+  cta: "Apply to the Platform",
+},
   about: {
-    heading: "Capital Meets Capability",
-    copy: "India's deeptech ventures often need more than conventional seed support. Long technology cycles, specialised validation, complex procurement, regulatory pathways and patient capital can determine whether a breakthrough reaches the market. The SIDBI National DeepTech Platform brings investment and acceleration into one coordinated journey — connecting promising ventures with capital, technical and commercial expertise, institutional infrastructure, potential customers, industry networks and future investors."
-  },
-  glance: [
-    { metric: "Envisioned platform corpus", value: "₹100 Cr" },
-    { metric: "Investment support per startup", value: "Up to ₹2 Cr" },
-    { metric: "Milestone-led venture building", value: "Structured" },
-    { metric: "Open to deeptech ventures", value: "National" }
-  ],
-  howItWorks: {
-    heading: "Built for the Realities of DeepTech",
-    subheading: "Deeptech companies are not built on short cycles. They require evidence, infrastructure, domain expertise, regulatory clarity and capital that understands milestone-based value creation.",
-    tagline: "Investment is subject to evaluation, due diligence, approval, applicable programme guidelines and definitive documentation.",
-    steps: [
-      {
-  id: "01",
-  title: "DIA",
-  headline: "Development of Industry Associations",
-  body: "SIDBI has launched the Development of Industry Association (DIA) programme under its cluster development initiative to strengthen India’s MSME ecosystem through proactive engagement with Industry Associations (IAs). It aims to enhance IA’s institutional capacity, foster sustainable and inclusive growth for MSMEs, and establish a mutually beneficial relationship with SIDBI. As on date, engagement with 105 IAs has been undertaken under DIA."
+  heading: "A National Platform for DeepTech Investment",
+  copy: "SIDBI envisages a national DeepTech investment platform to create a coordinated pipeline of high-potential technology startups for institutional evaluation and funding. The platform brings together SIDBI, FITT IIT Delhi and participating incubators through a common national application, shared evaluation standards and a Central Investment Committee."
 },
-{
-  id: "02",
-  title: "MSME Promotional Initiatives",
-  headline: "MSME Promotional Initiatives",
-  body: "A dedicated destination for the MSME Promotional Initiatives."
-},
-      {
-        id: "03",
-        title: "Market Access",
-        headline: "Difficult First-Market Access",
-        body: "Overcome market entry barriers through customer discovery, pilot design, industry connects, and corporate engagement programs."
-      },
-      {
-        id: "04",
-        title: "Funding Gaps",
-        headline: "Follow-On Funding Gaps",
-        body: "Bridge the gap with governance, investor readiness, data rooms, and curated capital access to prepare for your next round of funding."
-      }
-    ]
-  },
-  focusAreas: {
-    heading: "Deep Technologies with National Potential",
-    intro: "The platform prioritises ventures with substantive scientific or engineering differentiation, defensible technology, and credible validation pathways.",
-    areas: [
-      { id: "AI", domain: "Artificial Intelligence", details: "Advanced Data Systems & AI Infrastructure" },
-      { id: "SEM", domain: "Semiconductors", details: "Electronics, Photonics & Sensors" },
-      { id: "MFG", domain: "Advanced Manufacturing", details: "Robotics & Industry 4.0" },
-      { id: "CLI", domain: "Climate & Energy", details: "Clean Energy, Storage & Future Mobility" },
-      { id: "MED", domain: "HealthTech", details: "MedTech & Biotechnology" },
-      { id: "SPC", domain: "Space & Geo", details: "Geospatial & Communication Technologies" },
-      { id: "DEF", domain: "Defence & Aero", details: "Aerospace, Cybersecurity & Dual-Use Tech" },
-      { id: "QTM", domain: "Quantum Tech", details: "Quantum Technologies & Advanced Materials" },
-      { id: "AGR", domain: "AgriTech", details: "FoodTech & Bio-based Innovation" }
-    ]
-  },
-  acceleration: {
-    heading: "Application & Investment Process",
-    timeline: [
-      { stage: "Application", focus: "Company, technology, market, team and funding requirement.", output: "Submission" },
-      { stage: "Eligibility Review", focus: "Initial assessment against the published call and documentation requirements.", output: "Screening" },
-      { stage: "Tech & Business", focus: "Evaluation of differentiation, validation, market relevance and scalability.", output: "Shortlist" },
-      { stage: "Expert Interaction", focus: "Discussion with sector, technology and investment experts.", output: "Evaluation" },
-      { stage: "Due Diligence", focus: "Technical, commercial, financial, legal, IP and governance review.", output: "Clearance" },
-      { stage: "Investment Review", focus: "Consideration by the designated investment and approval mechanism.", output: "Approval" },
-      { stage: "Documentation", focus: "Finalisation of terms, conditions, milestones and investment documentation.", output: "Funding" },
-      { stage: "Acceleration", focus: "Diagnostic, milestone plan and tailored support journey.", output: "Onboarding" }
-    ]
-  },
-  mentors: {
-    heading: "Institutional Architecture",
-    copy: "Anchored Institutionally. Connected Nationally. The platform brings together the complementary strengths required to build deeptech companies.",
-    list: [
-      { name: "SIDBI", org: "Platform Anchor", role: "Strategic direction, capital architecture and institutional governance." },
-      { name: "FITT, IIT Delhi", org: "Anchor Institution", role: "Venture engagement, acceleration design, technology-commercialisation support and ecosystem mobilisation." },
-      { name: "Ecosystem Network", org: "Research & Industry", role: "Research institutions, incubators, industry partners, experts, investors, laboratories and public-sector stakeholders." }
-    ]
-  },
-  closing: {
-    startup: {
-      heading: "Ready to Move Your DeepTech Venture Forward?",
-      subhead: "Join a platform designed to connect breakthrough technologies with the capital, capabilities and market pathways required to build enduring enterprises.",
-      cta: "Apply to the Platform"
+glance: [
+  { metric: "Platform Owner", value: "SIDBI" },
+  { metric: "Initial Anchor Partner", value: "FITT, IIT Delhi" },
+  { metric: "Investment Support", value: "Up to ₹2 Cr" },
+  { metric: "Application Route", value: "National Call" }
+],
+howItWorks: {
+  heading: "From Application to Investment",
+  subheading:
+    "A structured process connecting DeepTech startups with the right incubator, institutional evaluation, investment decision-making and post-investment support.",
+  tagline:
+    "Each startup has one clearly identified lead incubator for appraisal and post-investment ownership, while final investment decisions rest with the Central Investment Committee.",
+  steps: [
+    {
+      id: "01",
+      title: "Common National Call",
+      headline: "One Application Gateway",
+      body:
+        "Startups apply through a common national interface, creating a single entry point to the SIDBI DeepTech investment platform."
     },
-    incubator: {
-      heading: "Who Should Apply",
-      body: "For Indian startups and technology ventures that demonstrate a proprietary or defensible technology-led solution and a clearly defined, high-value problem.",
-      cta: "Read Eligibility Requirements"
+    {
+      id: "02",
+      title: "Eligibility & Allocation",
+      headline: "Screening and Incubator Allocation",
+      body:
+        "Applications are screened against the approved eligibility criteria and allocated to the appropriate participating incubator based on domain, stage and institutional fit."
+    },
+    {
+      id: "03",
+      title: "Evaluation & Due Diligence",
+      headline: "Technology, Market & Investment Assessment",
+      body:
+        "Participating incubators assess technology, market opportunity, team, business model and investment readiness, followed by appropriate due diligence."
+    },
+    {
+      id: "04",
+      title: "Central Investment Committee",
+      headline: "Institutional Investment Decision",
+      body:
+        "Recommended cases are presented to the common Investment Committee for approval, conditional approval, deferral or rejection under the SIDBI-approved framework."
     }
+  ]
+},
+focusAreas: {
+  heading: "Priority Technology Domains",
+  intro:
+    "The programme focuses on technology-led ventures developing defensible products and solutions with strong potential for national and global scale.",
+  areas: [
+    {
+      id: "AI",
+      domain: "AI & Data Infrastructure",
+      details: "Artificial intelligence and advanced data systems"
+    },
+    {
+      id: "MFG",
+      domain: "Advanced Manufacturing",
+      details: "Robotics, automation and Industry 4.0"
+    },
+    {
+      id: "SEM",
+      domain: "Semiconductors & Electronics",
+      details: "Semiconductors, electronics, photonics and sensors"
+    },
+    {
+      id: "DEF",
+      domain: "Defence, Aerospace & Space",
+      details: "Defence, aerospace, space and dual-use technologies"
+    },
+    {
+      id: "CLI",
+      domain: "Climate & Clean Energy",
+      details: "Clean energy, storage and future mobility"
+    },
+    {
+      id: "MED",
+      domain: "HealthTech & Biotechnology",
+      details: "Medical devices, biotechnology and healthcare technologies"
+    },
+    {
+      id: "QTM",
+      domain: "Quantum & Advanced Materials",
+      details: "Quantum technologies and advanced materials"
+    },
+    {
+      id: "AGR",
+      domain: "AgriTech",
+      details: "Precision Agriculture"
+    }
+  ]
+},
+acceleration: {
+  heading: "Application & Investment Process",
+  timeline: [
+    {
+      stage: "1. National Call",
+      focus: "Common call for applications and targeted startup sourcing.",
+      output: "Application"
+    },
+    {
+      stage: "2. Eligibility Screening",
+      focus: "Programme eligibility, integrity and initial fit assessment.",
+      output: "Screening"
+    },
+    {
+      stage: "3. Startup Evaluation",
+      focus: "Technology, market, team, business model and strategic relevance.",
+      output: "Assessment"
+    },
+    {
+      stage: "4. Due Diligence",
+      focus: "Technical, commercial, financial, legal, IP and governance review.",
+      output: "Recommendation"
+    },
+    {
+      stage: "5. Investment Committee",
+      focus: "Review of appraisal, diligence, investment terms and milestones.",
+      output: "Decision"
+    },
+    {
+      stage: "6. Documentation",
+      focus: "Finalisation of investment terms, conditions and definitive documentation.",
+      output: "Execution"
+    },
+    {
+      stage: "7. Fund Disbursement",
+      focus: "Release of approved investment subject to the required conditions.",
+      output: "Investment"
+    },
+    {
+      stage: "8. Portfolio Monitoring",
+      focus: "Quarterly monitoring, mentoring, market access and ecosystem support.",
+      output: "Growth"
+    }
+  ]
+},
+  mentors: {
+  heading: "Institutional Architecture",
+  copy:
+    "A coordinated institutional model combining SIDBI's programme ownership with FITT's programme-management capabilities and the specialised expertise of participating incubators.",
+  list: [
+    {
+      name: "SIDBI",
+      org: "Platform Owner",
+      role:
+        "Strategic direction, investment framework, partner approval, governance and oversight."
+    },
+    {
+      name: "FITT PMU, IIT Delhi ",
+      org: "Central Coordination",
+      role:
+        "Launch support, national outreach, startup evaluation, programme coordination and operational execution."
+    },
+    
+    {
+      name: "Participating Incubators",
+      org: "Startup Assessment & Support",
+      role:
+        "Startup sourcing, technical and commercial assessment, due diligence, investment execution and portfolio support."
+    }
+  ]
+},
+closing: {
+  startup: {
+    heading: "Building the Next Generation of DeepTech Companies",
+    subhead:
+      "The SIDBI National DeepTech Investment Platform provides a common national gateway connecting promising technology startups with institutional evaluation, investment and ecosystem support.",
+    cta: "Apply to the Platform"
   },
+  incubator: {
+    heading: "A Connected National Ecosystem",
+    body:
+      "The platform is designed to progressively bring qualified incubators into a common framework while maintaining consistent evaluation, governance and investment decision-making.",
+    cta: "Explore the Platform"
+  }
+},
   footer: {
-    tagline: "A national ecosystem that transforms breakthrough deeptech innovation into real world impact, building India's next generation of startups and public good solutions.",
+    tagline: "SIDBI National DeepTech Investment Platform — connecting high-potential technology startups with institutional evaluation, investment and acceleration.",
     exploreLinks: [
-      { name: "About", href: "#about" },
-      { name: "Program Components", href: "#how-it-works" },
-      { name: "Focus Areas", href: "#focus" },
-      { name: "Timeline", href: "#acceleration" },
-      { name: "Partners", href: "#mentors" },
-      { name: "Apply", href: "#apply" }
-    ],
+  { name: "About", href: "#about" },
+  { name: "How It Works", href: "#how-it-works" },
+  { name: "Focus Areas", href: "#focus" },
+  { name: "Investment Process", href: "#acceleration" },
+  { name: "Partners", href: "#mentors" },
+  { name: "Apply", href: "#apply" }
+],
     contactInfo: {
       generalEmail: "contact@fitt-iitd.in",
       website: "fitt-iitd.in",
@@ -117,6 +208,6 @@ export const platformData = {
   { name: "Prasanjeet Sinha", email: "prasanjeet@fitt-iitd.in", image: "/img/sinha.png" }
 ],
     copyright: "© 2026 FITT, IIT Delhi. All rights reserved.",
-    partnership: "SIDBI DeepTech Platform - in partnership with FITT, IIT Delhi"
+    partnership: "SIDBI National DeepTech Investment Platform | Initial Anchor Partner: FITT, IIT Delhi"
   }
 };
