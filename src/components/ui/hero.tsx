@@ -250,7 +250,7 @@ export default function ShaderShowcase() {
               Learn More
             </motion.a>
             <motion.a
-              href="https://accubate.fitt-iitd.in/ext/form/23719/1/apply"
+              href="https://accubate.fitt-iitd.in/ext/form/24414/1/apply"
               className="w-full sm:w-auto text-center px-10 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-orange-500 text-white font-semibold text-sm transition-all duration-300 hover:from-cyan-400 hover:to-orange-400 cursor-pointer shadow-lg hover:shadow-xl inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
