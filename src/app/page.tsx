@@ -26,17 +26,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* EMBEDDED VIDEO/IMAGE PLACEHOLDER */}
-        <section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
-          <div className="w-full aspect-video md:aspect-[21/9] bg-slate-100 rounded-sm overflow-hidden relative shadow-lg">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Initiative" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center group cursor-pointer">
-              <div className="w-20 h-20 bg-red-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-xl">
-                <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-              </div>
-            </div>
-          </div>
-        </section>
+       {/* EMBEDDED VIDEO */}
+<section className="container mx-auto px-6 max-w-6xl mb-12 md:mb-32">
+  <div className="w-full aspect-video md:aspect-[21/9] bg-slate-100 rounded-sm overflow-hidden relative shadow-lg">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/n9_zUvAQxrk"
+      title="SIDBI FITT DeepTech Platform"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+</section>
 
         {/* HOW IT WORKS (Alternating Z-Layout) */}
         <section id="how-it-works" className="py-12 md:py-24 bg-white border-t border-slate-100">
@@ -73,10 +74,22 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="w-full md:w-1/2">
-                    <div className="aspect-[4/3] rounded-sm overflow-hidden bg-slate-100 shadow-xl border border-slate-200/60">
-                      <img src={`https://images.unsplash.com/photo-${i === 0 ? '1553877522-43269d4ea984' : i === 1 ? '1522071820081-009f0129c71c' : i === 2 ? '1460925895917-afdab827c52f' : '1551434678-e076c223a692'}?q=80&w=1200&auto=format&fit=crop`} alt={step.title} className="w-full h-full object-cover" />
-                    </div>
-                  </div>
+  <div className="aspect-[4/3] rounded-sm overflow-hidden bg-slate-100 shadow-xl border border-slate-200/60">
+    <img
+  src={
+  i === 0
+    ? "/img/dia-section1-img.png"
+    : i === 1
+      ? "/img/initiatives-vertical.png"
+      : i === 2
+        ? "/img/photo3.jpg"
+        : "/img/photo4.jpg"
+}
+  alt={step.title}
+  className="w-full h-full object-cover"
+/>
+  </div>
+</div>
                 </div>
               ))}
             </div>

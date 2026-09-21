@@ -22,17 +22,17 @@ export const platformData = {
     tagline: "Investment is subject to evaluation, due diligence, approval, applicable programme guidelines and definitive documentation.",
     steps: [
       {
-        id: "01",
-        title: "Capital & Planning",
-        headline: "Milestone-Aligned Capital",
-        body: "Long development cycles require milestone-aligned capital and venture planning. We provide up to ₹2 Cr in patient early-stage capital to match your growth."
-      },
-      {
-        id: "02",
-        title: "Validation",
-        headline: "Technical Validation Requirements",
-        body: "Navigate complex expert reviews, testing, and validation pathways with dedicated institutional access to testing infrastructure and specialised facilities."
-      },
+  id: "01",
+  title: "DIA",
+  headline: "Development of Industry Associations",
+  body: "SIDBI has launched the Development of Industry Association (DIA) programme under its cluster development initiative to strengthen India’s MSME ecosystem through proactive engagement with Industry Associations (IAs). It aims to enhance IA’s institutional capacity, foster sustainable and inclusive growth for MSMEs, and establish a mutually beneficial relationship with SIDBI. As on date, engagement with 105 IAs has been undertaken under DIA."
+},
+{
+  id: "02",
+  title: "MSME Promotional Initiatives",
+  headline: "MSME Promotional Initiatives",
+  body: "A dedicated destination for the MSME Promotional Initiatives."
+},
       {
         id: "03",
         title: "Market Access",
@@ -113,9 +113,9 @@ export const platformData = {
       actionLink: { text: "Visit SIDBI DeepTech Platform \u2192", href: "#" }
     },
     keyContacts: [
-      { name: "Ankit Saxena", email: "ankit@fitt-iitd.in", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" },
-      { name: "Prasanjeet Sinha", email: "prasanjeet@fitt-iitd.in", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" }
-    ],
+  { name: "Ankit Saxena", email: "ankit@fitt-iitd.in", image: "/img/ankit.jpg" },
+  { name: "Prasanjeet Sinha", email: "prasanjeet@fitt-iitd.in", image: "/img/sinha.png" }
+],
     copyright: "© 2026 FITT, IIT Delhi. All rights reserved.",
     partnership: "SIDBI DeepTech Platform - in partnership with FITT, IIT Delhi"
   }
