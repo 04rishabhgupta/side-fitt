@@ -287,7 +287,7 @@ export default function Home() {
               <p className="text-lg md:text-xl text-slate-600 font-light mb-10 leading-relaxed">
                 {platformData.closing.startup.subhead}
               </p>
-              <a href="https://accubate.fitt-iitd.in/ext/form/23719/1/apply" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-sm transition-colors inline-block shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
+              <a href="https://accubate.fitt-iitd.in/ext/form/24414/1/apply" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-sm transition-colors inline-block shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
                 {platformData.closing.startup.cta}
               </a>
             </div>
