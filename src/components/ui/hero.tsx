@@ -90,16 +90,15 @@ export default function ShaderShowcase() {
         </defs>
       </svg>
 
-      <MeshGradient
-        className="absolute inset-0 w-full h-full bg-black"
-        colors={["#000000", "#06b6d4", "#0891b2", "#164e63", "#f97316"]}
-        speed={0.3}
-      />
-      <MeshGradient
-        className="absolute inset-0 w-full h-full opacity-60 bg-transparent"
-        colors={["#000000", "#ffffff", "#06b6d4", "#f97316"]}
-        speed={0.2}
-      />
+      <video
+  className="absolute inset-0 w-full h-full object-cover"
+  src="/img/hero-video.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+/>
+<div className="absolute inset-0 bg-black/40" />
 
       <header className="relative z-20 flex items-center justify-between p-6">
         <motion.div
